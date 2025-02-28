@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,800;1,800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-[sora] mx-auto bg-green-50">
+ <header class="w-5/6 mx-auto mb-2">
+  <nav>
+    <div class="navbar bg-base-100 shadow-sm flex justify-between rounded-lg">
+      <a class="text-lg flex items-center cursor-pointer"><img src="./assets/logo.png" alt="logo" class="w-1/4">Dev<span class="font-bold">Board</span></a>
+      <div class="flex items-center gap-3">
+        <button class="btn rounded-full"><img src="./assets/checkbox.png" alt="checkbox" class="w-1/4"><span id="taskDone">23</span></button>
+        <button class="btn btn-circle"><img src="./assets/theme-btn.png" alt="" class="w-1/2"></button>
+      </div>
+    </div>
+  </nav>
+ </header>
+<main>
+<article class="w-5/6 mx-auto">
+  <section class="grid grid-cols-[3fr_1fr] gap-5">
+    <div class="bg-base-100 shadow-md rounded-lg">
+      <section class="grid grid-cols-[1fr_2fr_1fr] gap-2">
+        <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
+          <button class="btn btn-circle"><img src="./assets/checkbox.png" alt="" class="w-4"></button>
+          <div>
+            <p>Task Assigned</p>
+            <p id="taskNum">6</p>
+          </div>
+        </div>
+        <div class="bg-blue-500 flex gap-2 rounded-lg shadow-sm m-2 items-center justify-center cursor-pointer">
+          <img src="./assets/board.png" alt="" class="w-1/6">
+          <p class="text-white text-md">Discover something New Today!</p>
+        </div>
+        <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
+          <button class="btn btn-circle"><img src="./assets/calender.png" alt="" class="w-4"></button>
+          <div id="todayDate">  
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <!-- activity cards -->
+      <section class="grid grid-cols-[1fr_1fr_1fr] gap-3 m-2">
+        <div class="card card-border bg-green-50 max-w-full">
+          <div class="card-body">
+            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+            <h2 class="card-title">Fix Mobile Button Issue</h2>
+            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
+            and JavaScript event listeners properly.</p>
+            <div class="card-actions justify-end">
+              <p class="text-[12px]">
+                Deadline <br>
+                21 february,2025
+              </p>
+              <button id="btn-completed" class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-border bg-green-50 max-w-full">
+          <div class="card-body">
+            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+            <h2 class="card-title">Fix Mobile Button Issue</h2>
+            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
+            and JavaScript event listeners properly.</p>
+            <div class="card-actions justify-end">
+              <p class="text-[12px]">
+                Deadline <br>
+                21 february,2025
+              </p>
+              <button id="btn-completed" class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-border bg-green-50 max-w-full">
+          <div class="card-body">
+            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+            <h2 class="card-title">Fix Mobile Button Issue</h2>
+            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
+            and JavaScript event listeners properly.</p>
+            <div class="card-actions justify-end">
+              <p class="text-[12px]">
+                Deadline <br>
+                21 february,2025
+              </p>
+              <button id="btn-completed" class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-border bg-green-50 max-w-full">
+          <div class="card-body">
+            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+            <h2 class="card-title">Fix Mobile Button Issue</h2>
+            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
+            and JavaScript event listeners properly.</p>
+            <div class="card-actions justify-end">
+              <p class="text-[12px]">
+                Deadline <br>
+                21 february,2025
+              </p>
+              <button id="btn-completed" class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-border bg-green-50 max-w-full">
+          <div class="card-body">
+            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+            <h2 class="card-title">Fix Mobile Button Issue</h2>
+            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
+            and JavaScript event listeners properly.</p>
+            <div class="card-actions justify-end">
+              <p class="text-[12px]">
+                Deadline <br>
+                21 february,2025
+              </p>
+              <button id="btn-completed" class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-border bg-green-50 max-w-full">
+          <div class="card-body">
+            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+            <h2 class="card-title">Fix Mobile Button Issue</h2>
+            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
+            and JavaScript event listeners properly.</p>
+            <div class="card-actions justify-end">
+              <p class="text-[12px]">
+                Deadline <br>
+                21 february,2025
+              </p>
+              <button id="btn-completed" class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- activity logs -->
+    <div class="bg-base-100 flex flex-col gap-2 rounded-lg shadow-sm items-center">
+      <div class="flex gap-2 mt-2">
+        <img src="./assets/activity.png" alt="" class="max-w-full">
+        <p class="text-xl">Activity Log</p>
+      </div>
+      <button class="btn btn-primary">Clear History</button>
+    </div>
+  </section>
+</article>
+ </main>
+ <script src="./js/script.js"></script>
+</body>
+</html>
