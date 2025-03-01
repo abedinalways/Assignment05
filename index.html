@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,146 +13,163 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="font-[sora] mx-auto bg-green-50">
- <header class="w-5/6 mx-auto mb-2">
-  <nav>
-    <div class="navbar bg-base-100 shadow-sm flex justify-between rounded-lg">
-      <a class="text-lg flex items-center cursor-pointer"><img src="./assets/logo.png" alt="logo" class="w-1/4">Dev<span class="font-bold">Board</span></a>
-      <div class="flex items-center gap-3">
-        <button class="btn rounded-full"><img src="./assets/checkbox.png" alt="checkbox" class="w-1/4"><span id="taskDone">23</span></button>
-        <button class="btn btn-circle"><img src="./assets/theme-btn.png" alt="" class="w-1/2"></button>
+  <header class="w-5/6 mx-auto mb-2">
+    <!-- Nav-bar section -->
+    <nav>
+      <div class="navbar bg-base-100 shadow-sm flex justify-between rounded-lg">
+        <a class="text-lg flex items-center cursor-pointer"><img src="./assets/logo.png" alt="logo"
+            class="w-1/4">Dev<span class="font-bold">Board</span></a>
+        <div class="flex items-center gap-3">
+          <button class="btn rounded-full"><img src="./assets/checkbox.png" alt="checkbox" class="w-1/4"><span
+              id="taskDone">23</span></button>
+          <button class="btn btn-circle"><img src="./assets/theme-btn.png" alt="" class="w-1/2"></button>
+        </div>
       </div>
-    </div>
-  </nav>
- </header>
-<main>
-<article class="w-5/6 mx-auto">
-  <section class="grid grid-cols-[3fr_1fr] gap-5">
-    <div class="bg-base-100 shadow-md rounded-lg">
-      <section class="grid grid-cols-[1fr_2fr_1fr] gap-2">
-        <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
-          <button class="btn btn-circle"><img src="./assets/checkbox.png" alt="" class="w-4"></button>
-          <div>
-            <p>Task Assigned</p>
-            <p id="taskNum">6</p>
+    </nav>
+  </header>
+  <main>
+    <article class="w-5/6 mx-auto">
+      <section class="grid grid-cols-[3fr_1fr] gap-5">
+        <div class="bg-base-100 shadow-md rounded-lg">
+          <!-- task assigned section -->
+          <section class="grid grid-cols-[1fr_2fr_1fr] gap-2">
+            <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
+              <button class="btn btn-circle"><img src="./assets/checkbox.png" alt="" class="w-4"></button>
+              <div>
+                <p>Task Assigned</p>
+                <p id="taskNum">6</p>
+              </div>
+            </div>
+            <div class="bg-blue-500 flex gap-2 rounded-lg shadow-sm m-2 items-center justify-center cursor-pointer">
+              <img src="./assets/board.png" alt="" class="w-1/6">
+              <p class="text-white text-md">Discover something New Today!</p>
+            </div>
+            <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
+              <button class="btn btn-circle"><img src="./assets/calender.png" alt="" class="w-4"></button>
+              <div id="todayDate">
+              </div>
+            </div>
+          </section>
+          <div class="divider"></div>
+          <!-- activity section -->
+          <section class="grid grid-cols-[1fr_1fr_1fr] gap-3 m-2">
+            <!-- Fix Mobile Button Issue -->
+            <div class="card card-border bg-green-50 max-w-full">
+              <div class="card-body">
+                <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness
+                  fails, preventing user interaction. Fix it using CSS media queries
+                  and JavaScript event listeners properly.</p>
+                <div class="card-actions justify-end">
+                  <p class="text-[12px]">
+                    Deadline <br>
+                    28 february,2025
+                  </p>
+                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pay Success Modal -->
+            <div class="card card-border bg-green-50 max-w-full">
+              <div class="card-body">
+                <p class="bg-white py-2 w-25 rounded-xl text-center">Soft Pay</p>
+                <h2 class="card-title">Add Pay Success Modal</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">A Pay Success Modal confirms a successful payment
+                  with a message, checkmark icon, amount details, and a close button.</p>
+                <div class="card-actions justify-end">
+                  <p class="text-[12px]">
+                    Deadline <br>
+                    1 March,2025
+                  </p>
+                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- Add new reaction -->
+            <div class="card card-border bg-green-50 max-w-full">
+              <div class="card-body">
+                <p class="bg-white py-2 w-25 rounded-xl text-center">Meta</p>
+                <h2 class="card-title">Add new reaction</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">"Add new reaction" in JavaScript enables users to
+                  react with emojis or icons by updating the UI and storing reactions
+                  dynamically.</p>
+                <div class="card-actions justify-end">
+                  <p class="text-[12px]">
+                    Deadline <br>
+                    27 february,2025
+                  </p>
+                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- Fix Video loading issue -->
+            <div class="card card-border bg-green-50 max-w-full">
+              <div class="card-body">
+                <p class="bg-white py-2 w-25 rounded-xl text-center">Programming Hero</p>
+                <h2 class="card-title">Fix Video loading issue</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">Fix video loading issues by setting the correct
+                  source, handling errors, enabling autoplay, using preload, and debugging with console logs.</p>
+                <div class="card-actions justify-end">
+                  <p class="text-[12px]">
+                    Deadline <br>
+                    26 february,2025
+                  </p>
+                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-border bg-green-50 max-w-full">
+              <div class="card-body">
+                <p class="bg-white py-2 w-25 rounded-xl text-center">Google LLC</p>
+                <h2 class="card-title">Integrate AI search</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">Integrating AI Search means implementing an
+                  intelligent search system that understands natural language queries, ranks results smartly, and
+                  provides relevant responses using AI algorithms.</p>
+                <div class="card-actions justify-end">
+                  <p class="text-[12px]">
+                    Deadline <br>
+                    21 february,2025
+                  </p>
+                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-border bg-green-50 max-w-full">
+              <div class="card-body">
+                <p class="bg-white py-2 w-25 rounded-xl text-center">Polygon Tech</p>
+                <h2 class="card-title">Review Ami Probashi Site</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">Ami Probashi simplifies migration for Bangladeshi workers, digitizing processes, reducing costs, enhancing transparency,
+                and providing 24/7 support despite some challenges.</p>
+                <div class="card-actions justify-end">
+                  <p class="text-[12px]">
+                    Deadline <br>
+                    21 february,2025
+                  </p>
+                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- activity logs -->
+        <div class="bg-base-100 flex flex-col gap-2 rounded-lg shadow-sm items-center">
+          <div class="flex gap-2 mt-2">
+            <img src="./assets/activity.png" alt="" class="max-w-full">
+            <p class="text-xl">Activity Log</p>
           </div>
-        </div>
-        <div class="bg-blue-500 flex gap-2 rounded-lg shadow-sm m-2 items-center justify-center cursor-pointer">
-          <img src="./assets/board.png" alt="" class="w-1/6">
-          <p class="text-white text-md">Discover something New Today!</p>
-        </div>
-        <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
-          <button class="btn btn-circle"><img src="./assets/calender.png" alt="" class="w-4"></button>
-          <div id="todayDate">  
+          <button id="clear" class="btn btn-primary">Clear History</button>
+          <div class="divider"></div>
+          <div id="activities">
+          
           </div>
         </div>
       </section>
-      <div class="divider"></div>
-      <!-- activity cards -->
-      <section class="grid grid-cols-[1fr_1fr_1fr] gap-3 m-2">
-        <div class="card card-border bg-green-50 max-w-full">
-          <div class="card-body">
-            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
-            <h2 class="card-title">Fix Mobile Button Issue</h2>
-            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
-            and JavaScript event listeners properly.</p>
-            <div class="card-actions justify-end">
-              <p class="text-[12px]">
-                Deadline <br>
-                21 february,2025
-              </p>
-              <button id="btn-completed" class="btn btn-primary">Completed</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-border bg-green-50 max-w-full">
-          <div class="card-body">
-            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
-            <h2 class="card-title">Fix Mobile Button Issue</h2>
-            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
-            and JavaScript event listeners properly.</p>
-            <div class="card-actions justify-end">
-              <p class="text-[12px]">
-                Deadline <br>
-                21 february,2025
-              </p>
-              <button id="btn-completed" class="btn btn-primary">Completed</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-border bg-green-50 max-w-full">
-          <div class="card-body">
-            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
-            <h2 class="card-title">Fix Mobile Button Issue</h2>
-            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
-            and JavaScript event listeners properly.</p>
-            <div class="card-actions justify-end">
-              <p class="text-[12px]">
-                Deadline <br>
-                21 february,2025
-              </p>
-              <button id="btn-completed" class="btn btn-primary">Completed</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-border bg-green-50 max-w-full">
-          <div class="card-body">
-            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
-            <h2 class="card-title">Fix Mobile Button Issue</h2>
-            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
-            and JavaScript event listeners properly.</p>
-            <div class="card-actions justify-end">
-              <p class="text-[12px]">
-                Deadline <br>
-                21 february,2025
-              </p>
-              <button id="btn-completed" class="btn btn-primary">Completed</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-border bg-green-50 max-w-full">
-          <div class="card-body">
-            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
-            <h2 class="card-title">Fix Mobile Button Issue</h2>
-            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
-            and JavaScript event listeners properly.</p>
-            <div class="card-actions justify-end">
-              <p class="text-[12px]">
-                Deadline <br>
-                21 february,2025
-              </p>
-              <button id="btn-completed" class="btn btn-primary">Completed</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-border bg-green-50 max-w-full">
-          <div class="card-body">
-            <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
-            <h2 class="card-title">Fix Mobile Button Issue</h2>
-            <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness fails, preventing user interaction. Fix it using CSS media queries
-            and JavaScript event listeners properly.</p>
-            <div class="card-actions justify-end">
-              <p class="text-[12px]">
-                Deadline <br>
-                21 february,2025
-              </p>
-              <button id="btn-completed" class="btn btn-primary">Completed</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- activity logs -->
-    <div class="bg-base-100 flex flex-col gap-2 rounded-lg shadow-sm items-center">
-      <div class="flex gap-2 mt-2">
-        <img src="./assets/activity.png" alt="" class="max-w-full">
-        <p class="text-xl">Activity Log</p>
-      </div>
-      <button class="btn btn-primary">Clear History</button>
-    </div>
-  </section>
-</article>
- </main>
- <script src="./js/script.js"></script>
+    </article>
+  </main>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
