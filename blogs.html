@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blogs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,800;1,800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-[sora] mx-auto bg-green-50">
+  <header class="w-5/6 mx-auto mb-2">
+    <!-- Nav-bar section -->
+    <nav>
+      <div class="navbar bg-base-100 shadow-sm flex justify-between rounded-lg">
+        <a class="text-lg flex items-center cursor-pointer"><img src="./assets/logo.png" alt="logo"
+            class="w-1/4">Dev<span class="font-bold">Board</span></a>
+        <button id="backBtn" class="btn btn-primary">Back to Desk</button>
+      </div>
+    </nav>
+  </header>
+  <!-- Q&A section -->
+  <div class="w-5/6 mx-auto mb-3">
+    <h1 class="text-center text-3xl font-bold f">Blogs</h1>
+    <div class="p-2 bg-base-100 shadow-md flex flex-col rounded-lg my-4 border-base-400">
+      <p class="font-semi-bold">Question-1: What are the different ways to select an element in the DOM?
+      </p>
+      <div class="border-t-2 border-dotted border-gray-200 w-full my-2"></div>
+      <p class="text-gray-500 text-sm">The different ways to select an element in the DOM are-
+        document.getElementById("ID-name"), document.getElementsByClassName("Class-name"),
+        document.getElementsByTagName("p"),
+        document.querySelector(".Class-name"), document.querySelectorAll(".Class-name")
+      </p>
+    </div>
+    <div class="p-2 bg-base-100 shadow-md flex flex-col rounded-lg my-4 border-base-400">
+      <p class="font-semi-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</p>
+      <div class="border-t-2 border-dotted border-gray-200 w-full my-2"></div>
+      <p class="text-gray-500 text-sm">innerHTML allows reading and modifying HTML content, meaning it processes and
+        renders any HTML tags inside an element.
+        innerText retrieves or sets only the visible text of an element, ignoring any hidden content or HTML tags.
+        textContent is similar to innerText but captures all text within an element, including hidden text.
+      </p>
+    </div>
+    <div class="p-2 bg-base-100 shadow-md flex flex-col rounded-lg my-2 border-base-400">
+      <p class="font-semi-bold">Question-3: What is event delegation in the DOM?</p>
+      <div class="border-t-2 border-dotted border-gray-200 w-full my-2"></div>
+      <p class="text-gray-500 text-sm">Event delegation is a technique in JavaScript where a parent element is used to
+        handle events for its child elements.Instead of adding event listeners to multiple child elements, attach a
+        single event listener to their common parent.This works because of event bubbling, where an event moves up from
+        the target element to its ancestors.
+      </p>
+    </div>
+    <div class="p-2 bg-base-100 shadow-md flex flex-col rounded-lg my-2 border-base-400">
+      <p class="font-semi-bold">Question-4: What is event bubbling in the DOM?</p>
+      <div class="border-t-2 border-dotted border-gray-200 w-full my-2"></div>
+      <p class="text-gray-500 text-sm">Event bubbling is a process in JavaScript where an event starts from the target
+        element and moves up through its parent
+        elements. This means when an event (like a click) happens on a child element, it first runs its event handler,
+        then
+        triggers event handlers on its parent, grandparent, and so on, until it reaches the root</p>
+    </div>
+    <div class="p-2 bg-base-100 shadow-md flex flex-col rounded-lg my-2 border-base-400">
+      <p class="font-semi-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+      <div class="border-t-2 border-dotted border-gray-200 w-full my-2"></div>
+      <p class="text-gray-500 text-sm">Creating an Element – document.createElement(). <br>
+        Adding the Element –appendChild() or append(). <br>
+        Removing the Element – remove() or removeChild()
+      </p>
+    </div>
+  </div>
+  <script src="./js/blogs.js"></script>
+</body>
+
+</html>

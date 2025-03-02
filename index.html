@@ -23,8 +23,8 @@
             class="w-1/4">Dev<span class="font-bold">Board</span></a>
         <div class="flex items-center gap-3">
           <button class="btn rounded-full"><img src="./assets/checkbox.png" alt="checkbox" class="w-1/4"><span
-              id="taskDone">23</span></button>
-          <button class="btn btn-circle"><img src="./assets/theme-btn.png" alt="" class="w-1/2"></button>
+              id="taskDone" class="text-xl">23</span></button>
+          <button id="themeBtn" class="btn btn-circle"><img src="./assets/theme-btn.png" alt="" class="w-1/2"></button>
         </div>
       </div>
     </nav>
@@ -37,118 +37,118 @@
           <section class="grid grid-cols-[1fr_2fr_1fr] gap-2">
             <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
               <button class="btn btn-circle"><img src="./assets/checkbox.png" alt="" class="w-4"></button>
-              <div>
-                <p>Task Assigned</p>
-                <p id="taskNum">6</p>
+              <div class="flex flex-col items-center justify-center">
+                <p class="text-[10px]">Task Assigned</p>
+                <p id="taskNum" class="font-bold text-xl">6</p>
               </div>
             </div>
-            <div class="bg-blue-500 flex gap-2 rounded-lg shadow-sm m-2 items-center justify-center cursor-pointer">
+            <div id="discover"
+              class="bg-linear-to-r from-blue-800 to-blue-300 flex gap-2 rounded-lg shadow-sm m-2 items-center justify-center cursor-pointer">
               <img src="./assets/board.png" alt="" class="w-1/6">
               <p class="text-white text-md">Discover something New Today!</p>
             </div>
             <div class="flex gap-2 bg-green-50 rounded-lg shadow-sm m-2 items-center justify-center">
-              <button class="btn btn-circle"><img src="./assets/calender.png" alt="" class="w-4"></button>
+              <button id="calender" class="btn btn-circle"><img src="./assets/calender.png" alt="" class="w-4"></button>
               <div id="todayDate">
               </div>
             </div>
           </section>
-          <div class="divider"></div>
+          <div class="border-t-2 border-dotted border-gray-200 w-full my-4"></div>
           <!-- activity section -->
-          <section class="grid grid-cols-[1fr_1fr_1fr] gap-3 m-2">
+          <section class="grid grid-cols-[1fr_1fr_1fr] gap-2 m-2">
             <!-- Fix Mobile Button Issue -->
             <div class="card card-border bg-green-50 max-w-full">
               <div class="card-body">
-                <p class="bg-white py-2 w-25 rounded-xl text-center">Shop Ease</p>
+                <p class="bg-white rounded-md w-24 flex justify-center items-center text-[12px]">Shop Ease</p>
                 <h2 class="card-title">Fix Mobile Button Issue</h2>
-                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">The mobile button issue occurs when responsiveness
-                  fails, preventing user interaction. Fix it using CSS media queries
-                  and JavaScript event listeners properly.</p>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md flex justify-center items-center text-[12px]">Repair
+                  my phone's button from the mobile shop, and it costs 300 tk to pay for this.</p>
                 <div class="card-actions justify-end">
                   <p class="text-[12px]">
                     Deadline <br>
                     28 february,2025
                   </p>
-                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                  <button class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
             <!-- Add Pay Success Modal -->
             <div class="card card-border bg-green-50 max-w-full">
               <div class="card-body">
-                <p class="bg-white py-2 w-25 rounded-xl text-center">Soft Pay</p>
+                <p class="bg-white rounded-md w-24 flex justify-center items-center text-[12px]">Soft Pay</p>
                 <h2 class="card-title">Add Pay Success Modal</h2>
-                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">A Pay Success Modal confirms a successful payment
-                  with a message, checkmark icon, amount details, and a close button.</p>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md flex justify-center items-center text-[12px]">Pay
+                  successfully from my Bkash account, and it costs 200 tk for the pay charge.</p>
                 <div class="card-actions justify-end">
                   <p class="text-[12px]">
                     Deadline <br>
                     1 March,2025
                   </p>
-                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                  <button class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
             <!-- Add new reaction -->
             <div class="card card-border bg-green-50 max-w-full">
               <div class="card-body">
-                <p class="bg-white py-2 w-25 rounded-xl text-center">Meta</p>
-                <h2 class="card-title">Add new reaction</h2>
-                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">"Add new reaction" in JavaScript enables users to
-                  react with emojis or icons by updating the UI and storing reactions
-                  dynamically.</p>
+                <p class="bg-white rounded-md w-24 flex justify-center items-center text-[12px]">Meta</p>
+                <h2 class="card-title">Add new reaction🤲</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md flex justify-center items-center text-[12px]">Add a
+                  new reaction to all of my meta accounts, and it responds to a huge audience</p>
                 <div class="card-actions justify-end">
                   <p class="text-[12px]">
                     Deadline <br>
                     27 february,2025
                   </p>
-                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                  <button class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
             <!-- Fix Video loading issue -->
             <div class="card card-border bg-green-50 max-w-full">
               <div class="card-body">
-                <p class="bg-white py-2 w-25 rounded-xl text-center">Programming Hero</p>
+                <p class="bg-white rounded-md w-30 flex justify-center items-center text-[12px]">Programming Hero</p>
                 <h2 class="card-title">Fix Video loading issue</h2>
-                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">Fix video loading issues by setting the correct
-                  source, handling errors, enabling autoplay, using preload, and debugging with console logs.</p>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md flex justify-center items-center text-[12px]">
+                  Downloaded the Naptune Programming Hero desktop app and fixed this issue using Ctrl+Shift+R. Issue
+                  fixed</p>
                 <div class="card-actions justify-end">
                   <p class="text-[12px]">
                     Deadline <br>
                     26 february,2025
                   </p>
-                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                  <button class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
             <div class="card card-border bg-green-50 max-w-full">
               <div class="card-body">
-                <p class="bg-white py-2 w-25 rounded-xl text-center">Google LLC</p>
+                <p class="bg-white rounded-md w-24 flex justify-center items-center text-[12px]">Google LLC</p>
                 <h2 class="card-title">Integrate AI search</h2>
-                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">Integrating AI Search means implementing an
-                  intelligent search system that understands natural language queries, ranks results smartly, and
-                  provides relevant responses using AI algorithms.</p>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md flex justify-center items-center text-[12px]">Using
+                  AI to provide instruction as my private instructor and for other learning objectives</p>
                 <div class="card-actions justify-end">
                   <p class="text-[12px]">
                     Deadline <br>
                     21 february,2025
                   </p>
-                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                  <button class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
             <div class="card card-border bg-green-50 max-w-full">
               <div class="card-body">
-                <p class="bg-white py-2 w-25 rounded-xl text-center">Polygon Tech</p>
-                <h2 class="card-title">Review Ami Probashi Site</h2>
-                <p class="text-gray-400 bg-white p-2 m-2 rounded-md">Ami Probashi simplifies migration for Bangladeshi workers, digitizing processes, reducing costs, enhancing transparency,
-                and providing 24/7 support despite some challenges.</p>
+                <p class="bg-white rounded-md w-24 flex justify-center items-center text-[12px]">Polygon Tech</p>
+                <h2 class="card-title">Review A Site</h2>
+                <p class="text-gray-400 bg-white p-2 m-2 rounded-md flex justify-center items-center text-[12px]">Review
+                  this site "Ami-Probashi" and give powerful feedback and share it on my Facebook and Instagram
+                  accounts.</p>
                 <div class="card-actions justify-end">
                   <p class="text-[12px]">
                     Deadline <br>
                     21 february,2025
                   </p>
-                  <button id="btn-completed" class="btn btn-primary">Completed</button>
+                  <button class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -157,13 +157,12 @@
         <!-- activity logs -->
         <div class="bg-base-100 flex flex-col gap-2 rounded-lg shadow-sm items-center">
           <div class="flex gap-2 mt-2">
-            <img src="./assets/activity.png" alt="" class="max-w-full">
-            <p class="text-xl">Activity Log</p>
+            <img src="./assets/activity.png" alt="" class="">
+            <p class="text-md">Activity Log</p>
           </div>
           <button id="clear" class="btn btn-primary">Clear History</button>
-          <div class="divider"></div>
+          <div class="border-t-2 border-dotted border-gray-200 w-full my-2"></div>
           <div id="activities">
-          
           </div>
         </div>
       </section>
